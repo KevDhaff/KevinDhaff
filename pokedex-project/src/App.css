@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: url(https://static3.cbrimages.com/wordpress/wp-content/uploads/2019/09/Pokemon-Ash-Feature-Image-1.jpg);
 }
 
 .App-logo {
@@ -36,8 +37,15 @@
 select {
   font-size: 30px;
   padding: 10px;
-  background-color: #e9d206;
+  background-color: #494944;
   border-radius: 20px;
+  color: azure;
+  cursor: pointer;
+  transition: all 0.5 ease-in-out;
+}
+select:hover {
+  background-color: azure;
+  color: #494944;
 }
 
 .pokemon-grid {
@@ -58,6 +66,12 @@ select {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: transform 0.2s ease-in-out;
+  background-image: url(https://i.pinimg.com/originals/a2/c7/9c/a2c79cda7d8dd7f5ea717a282dab8654.png);
+}
+.pokemon-card:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .pokemon-image {
@@ -68,10 +82,14 @@ select {
 
 .pokemon-card h3 {
   text-transform: capitalize;
+  font-size: 18pt;
+  color: #39FF14;
 }
 
 .pokemon-card p {
-  font-size: 14px;
+  font-size: 14pt;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(11, 14, 14);
 }
 
 
