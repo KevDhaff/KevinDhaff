@@ -1,0 +1,105 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #535353;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+div {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  background-color: #535050;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ecf1f5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #2980b9;
+  margin: 20px 0 10px;
+  font-size: 2.2em;
+}
+
+h3 {
+  color: #2079d1;
+}
+
+nav {
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #dae1e6;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s, transform 0.1s;
+}
+
+nav a:hover {
+  color: #c0392b;
+  text-decoration: underline;
+}
+
+nav a:active {
+  transform: scale(0.95);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  color: #e9c8c8;
+  font-size: 1.3em;
+}
+
+li:hover {
+  background-color: #8bee1a;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+.background {
+  background-image: url(https://wallpapercave.com/wp/akHTqZe.jpg);
+}
+
+p {
+  font-size: 1.3em;
+  color: #eee7e7;
+}
+
+.backgrounds {
+  background-image: url(https://th.bing.com/th/id/OIP.Eeo2hDnCXaVfI8P5DnK9VgHaEK?rs=1&pid=ImgDetMain);
+}
