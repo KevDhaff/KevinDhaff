@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light background for better contrast */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6; /* Improved line spacing */
+}
+
+/* App Container */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height for the app */
+}
+
+/* Header Styles */
+.header {
+  background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Gradient background */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  margin-top: 10px;
+  display: flex; /* Align input and button horizontally */
+  justify-content: center; /* Center align */
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 2px solid #3498db; /* Blue border */
+  border-radius: 5px;
+  width: 300px;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #2980b9; /* Darker blue on focus */
+  outline: none; /* Remove default outline */
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e74c3c; /* Red button */
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Navigation Styles */
+.navigation {
+  background-color: #34495e; /* Dark navigation background */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation li {
+  margin: 10px 0; /* Vertical spacing for links */
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  display: block; /* Full clickable area */
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+  background-color: #e74c3c; /* Highlight on hover */
+}
+
+/* Content Styles */
+.content {
+  flex: 1;
+  display: flex;
+  padding: 20px; /* Add padding for content */
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 20px; /* Ensure padding is consistent */
+}
+
+/* Product List Styles */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Even spacing */
+  margin: -10px; /* Negative margin to align with product */
+}
+
+/* Product Card Styles */
+.product {
+  background-color: #ffffff; /* White background for products */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px; /* Spacing around products */
+  flex: 1 1 calc(33.33% - 20px); /* Responsive layout */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.product-image {
+  max-width: 60%;
+  height: auto;
+  border-radius: 5px; /* Rounded corners for images */
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+}
+
