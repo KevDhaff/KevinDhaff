@@ -10,6 +10,7 @@ const Header = () => {
 
   return (
     <header>
+      <h2>KEYSTAXX</h2>
       <h1>Esport Keyboards</h1>
       <nav>
         <Link to='/' className={activeLink == '/' ? 'active' : ''} onClick={()=> handleLinkClick('/')}>Home</Link>

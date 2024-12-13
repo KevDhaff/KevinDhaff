@@ -38,6 +38,7 @@ h2 {
   max-width: 1200px;
   text-align: center;
   margin: 20px auto;
+  background-color: rgb(88, 88, 88);
 }
 
 form {
@@ -206,12 +207,19 @@ button:hover {
 }
 
 .developer-card {
+  margin: 16px;
+  transition: box-shadow 0.3s;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 15px;
   width: 300px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #a5a5a5;
+}
+
+.developer-card:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0,);
 }
 
 .developer-card h3 {

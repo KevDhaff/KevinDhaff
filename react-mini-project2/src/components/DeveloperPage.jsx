@@ -53,24 +53,21 @@ const developers = [
   },
 ];
 
-const DeveloperCard = ({ developer, onVouch, isVouched }) => {
-  return (
-    <div className="developer-card">
-      <h3>{developer.name}</h3>
-      <h4>{developer.role}</h4>
-      <p>{developer.description}</p>
-      <button onClick={() => onVouch(developer.name)} disabled={isVouched}>
-        {isVouched ? 'Vouched' : 'Vouch'}
-      </button>
-    </div>
-  );
-};
-
 const DeveloperPage = () => {
-  const [vouchedDevelopers, setVouchedDevelopers] = useState(new Set());
+  const [vouchCounts, setVouchCounts] = useState({});
+  const [clickedDeveloper, setClickedDeveloper] = useState(0);
 
   const handleVouch = (name) => {
-    setVouchedDevelopers((prev) => new Set(prev).add(name));
+    setVouchCounts((prevCounts) => ({
+      ...prevCounts,
+      [name]: (prevCounts[name] || 0) + 1,
+    }));
+
+    setClickedDeveloper(name);
+
+    setTimeout(() => {
+      setClickedDeveloper(null);
+    }, 100);
   };
 
   return (
@@ -82,12 +79,18 @@ const DeveloperPage = () => {
         <h2>Our Developers:</h2>
         <div className="developer-list">
           {developers.map((developer) => (
-            <DeveloperCard 
-              key={developer.name} 
-              developer={developer} 
-              onVouch={handleVouch} 
-              isVouched={vouchedDevelopers.has(developer.name)} 
-            />
+            <div className="developer-card" key={developer.name}>
+              <h3>{developer.name}</h3>
+              <h4>{developer.role}</h4>
+              <p>{developer.description}</p><br />
+              <p>Total Vouches: {vouchCounts[developer.name] || 0}</p> {}
+              <button 
+                onClick={() => handleVouch(developer.name)} 
+                className={clickedDeveloper == developer.name ? 'clicked' : ''}
+              >
+                {clickedDeveloper == developer.name ? 'Vouched!' : 'Vouch'}
+              </button>
+            </div>
           ))}
         </div>
       </div>
