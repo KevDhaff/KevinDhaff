@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const developers = [
   {
@@ -53,7 +53,26 @@ const developers = [
   },
 ];
 
+const DeveloperCard = ({ developer, onVouch, isVouched }) => {
+  return (
+    <div className="developer-card">
+      <h3>{developer.name}</h3>
+      <h4>{developer.role}</h4>
+      <p>{developer.description}</p>
+      <button onClick={() => onVouch(developer.name)} disabled={isVouched}>
+        {isVouched ? 'Vouched' : 'Vouch'}
+      </button>
+    </div>
+  );
+};
+
 const DeveloperPage = () => {
+  const [vouchedDevelopers, setVouchedDevelopers] = useState(new Set());
+
+  const handleVouch = (name) => {
+    setVouchedDevelopers((prev) => new Set(prev).add(name));
+  };
+
   return (
     <div className='developer'>
       <h1>Developer Information</h1>
@@ -61,15 +80,16 @@ const DeveloperPage = () => {
       
       <div>
         <h2>Our Developers:</h2>
-        <ul>
-          {developers.map((developer, index) => (
-            <li key={index}>
-              <p><strong>Name: {developer.name}</strong></p>
-              <p><strong>Role: </strong> {developer.role}</p>
-              <p><strong>Description: </strong> {developer.description}</p>
-            </li>
+        <div className="developer-list">
+          {developers.map((developer) => (
+            <DeveloperCard 
+              key={developer.name} 
+              developer={developer} 
+              onVouch={handleVouch} 
+              isVouched={vouchedDevelopers.has(developer.name)} 
+            />
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );
