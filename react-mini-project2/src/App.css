@@ -10,9 +10,10 @@ body {
   justify-content: center;
   min-height: 100vh;
   max-width: 1200px;
-  background-image: url(https://th.bing.com/th/id/R.e60d5e14a35314989ba62097ad160bed?rik=4CcM2flAyzk%2bqA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fHztiEdc.jpg&ehk=u4YdK8QqCLDIf2ssrfRxGD7QUa3OAfqnHa3VX3CagTQ%3d&risl=&pid=ImgRaw&r=0);
+  background-image: url(https://img.freepik.com/premium-photo/black-keyboard-with-letters_837731-1.jpg);
   background-position: center;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 h1 {
@@ -31,6 +32,12 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h3 {
+  color: aqua;
+  font-style: italic;
+  font-size: x-large;
+}
+
 .home, .company-profile, .reviews, .product-detail, .product-card, .missionvision {
   border-radius: 10px;
   box-shadow: var(--box-shadow);
@@ -38,7 +45,6 @@ h2 {
   max-width: 1200px;
   text-align: center;
   margin: 20px auto;
-  background-color: rgb(88, 88, 88);
 }
 
 form {
@@ -98,13 +104,14 @@ header {
 }
 
 footer {
-  color: #494949;
+  color: #f7dada;
   padding: 20px 0;
   text-align: center;
   position: relative;
   bottom: 0;
   width: 100%;
   border-radius: 20px;
+  background-color: rgb(88, 88, 88);
 }
 
 nav {
