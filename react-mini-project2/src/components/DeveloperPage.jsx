@@ -16,6 +16,41 @@ const developers = [
     role: 'Full Stack Developer',
     description: 'Charlie has expertise in both frontend and backend technologies, bridging the gap between the two.',
   },
+  {
+    name: 'Diana Prince',
+    role: 'UI/UX Designer',
+    description: 'Diana excels in designing intuitive user experiences and visually appealing interfaces.',
+  },
+  {
+    name: 'Ethan Hunt',
+    role: 'DevOps Engineer',
+    description: 'Ethan is skilled in automating deployment processes and managing cloud infrastructure for optimal performance.',
+  },
+  {
+    name: 'Fiona Gallagher',
+    role: 'Mobile Developer',
+    description: 'Fiona develops cross-platform mobile applications, focusing on performance and user engagement.',
+  },
+  {
+    name: 'George Lucas',
+    role: 'Data Scientist',
+    description: 'George analyzes complex data sets to derive actionable insights and drive data-informed decisions.',
+  },
+  {
+    name: 'Hannah Baker',
+    role: 'Quality Assurance Engineer',
+    description: 'Hannah ensures software quality through rigorous testing and validation processes.',
+  },
+  {
+    name: 'Ian Malcolm',
+    role: 'Software Architect',
+    description: 'Ian designs scalable software architectures and oversees the technical direction of projects.',
+  },
+  {
+    name: 'Julia Roberts',
+    role: 'Security Specialist',
+    description: 'Julia focuses on implementing security measures to protect applications and data from vulnerabilities.',
+  },
 ];
 
 const DeveloperPage = () => {
